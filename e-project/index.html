@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puppyco</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> 
+<script src="script.js"></script>
+
+<style>
+.navbar
+{
+    background-color: #36538b;
+    font-size: 15px;
+}
+.logo
+{
+width: 150px;
+height: 150px;
+
+}
+#icons
+{
+    margin-left: 10px;
+}
+#wowslider-container1
+{
+    width: 100%;
+    height: 300px;
+}
+/* Section-3-Starts */
+
+*{
+  margin:0;
+  padding:0;
+}
+#categories{
+  overflow:hidden;
+  width:90%;
+  margin:0 auto;
+}
+.clr:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+#categories li{
+  position:relative;
+  list-style-type:none;
+  width:27.85714285714286%; /* = (100-2.5) / 3.5 */
+  padding-bottom: 32.16760145166612%; /* =  width /0.866 */
+  float:left;
+  overflow:hidden;
+  visibility:hidden;
+ 
+  -webkit-transform: rotate(-60deg) skewY(30deg);
+  -ms-transform: rotate(-60deg) skewY(30deg);
+  transform: rotate(-60deg) skewY(30deg);
+}
+#categories li:nth-child(3n+2){
+  margin:0 1%;
+}
+#categories li:nth-child(6n+4){
+  margin-left:0.5%;
+}
+#categories li:nth-child(6n+4), #categories li:nth-child(6n+5), #categories li:nth-child(6n+6) {
+	margin-top: -6.9285714285%;
+  margin-bottom: -6.9285714285%;
+  
+  -webkit-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+  -ms-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+  transform: translateX(50%) rotate(-60deg) skewY(30deg);
+}
+#categories li:nth-child(6n+4):last-child, #categories li:nth-child(6n+5):last-child, #categories li:nth-child(6n+6):last-child{
+  margin-bottom:0%;
+}
+#categories li *{
+  position:absolute;
+  visibility:visible;
+}
+#categories li > div{
+  width:100%;
+  height:100%;
+  text-align:center;
+  color:#d6292b;
+  overflow:hidden;
+  
+  -webkit-transform: skewY(-30deg) rotate(60deg);
+  -ms-transform: skewY(-30deg) rotate(60deg);
+  transform: skewY(-30deg) rotate(60deg);
+  
+}
+
+/* HEX CONTENT */
+#categories li img{
+  left:-100%; right:-100%;
+  width: auto; height:100%;
+  margin:0 auto;   
+}
+
+#categories div h1, #categories div p{
+  width:90%;
+  padding:0 5%;
+  background-color:#fef0c1; background-color: #fef0c1;
+  font-family: 'Raleway', sans-serif;
+  
+  -webkit-transition: top .2s ease-out, bottom .2s ease-out, .2s padding .2s ease-out;
+  -ms-transition: top .2s ease-out, bottom .2s ease-out, .2s padding .2s ease-out;
+  transition: top .2s ease-out, bottom .2s ease-out, .2s padding .2s ease-out;
+}
+#categories li h1{
+  bottom:110%;
+  font-style:italic;
+  font-weight:normal;
+  font-size:25px;
+  padding-top:100%;
+  padding-bottom:100%;
+}
+#categories li h1:after{
+	content:'';
+  display:block;
+  position:absolute;
+  bottom:-1px; left:45%;
+  width:10%;
+  text-align:center;
+  z-index:1;
+  border-bottom:2px solid #fff;
+}
+#categories li p{
+	padding-top:50%;
+	top:110%;
+	padding-bottom:50%;
+}
+
+
+
+/* HOVER EFFECT  */
+
+#categories li div:hover h1 {
+  bottom:50%;
+  padding-bottom:10%;
+}
+
+#categories li div:hover p{
+  top:50%;
+  padding-top:10%;
+}
+#fork{
+  position:fixed;
+  top:0;
+  left:0;
+  color:#fef0c1;
+  text-decoration:none;
+  border:1px solid #fef0c1;
+  padding:.5em .7em;
+  margin:1%;
+  transition: color .5s;
+  overflow:hidden;
+}
+#fork:before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 130%; height: 100%;
+  background: #fef0c1;
+  z-index: -1;
+  transform-origin:0 0 ;
+  transform:translateX(-100%) skewX(-45deg);
+  transition: transform .5s;
+}
+#fork:hover {
+  color: #fff;
+}
+#fork:hover:before {
+  transform: translateX(0) skewX(-45deg);
+
+}
+.dogs1:hover
+{
+  opacity: 0.4;
+}
+.vl {
+  border-left: 6px solid green;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;
+}
+/* .carousel
+{
+  height: 200px;
+} */
+#crslid
+{
+height: 200px;
+}
+</style>
+</head>
+<body>
+
+  
+<div class="container">
+    
+        <div class="col-md-12 text-center">
+<img class="logo" src="images/logo``.png" alt="">
+</div>
+</div>        
+ <!--Navbar starts-->
+ <nav class="navbar navbar-expand-lg navbar-dark  mb-4">
+   <a class="navbar-brand" href="index.html">PuppyCo</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+     </button>
+ <div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav mr-auto">
+ <li class="nav-item active">
+  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+ </li>
+ <li class="nav-item">
+ <a class="nav-link" href="gallery.html">Gallery</a>
+ </li>           
+ <li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Breeds </a>
+ <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+ <a class="dropdown-item" href="LabradorRetriever.html">Labrador Retriever</a>
+<a class="dropdown-item" href="GermanShepherd.html"> German Shepherd</a>
+  <a class="dropdown-item" href="GoldenRetriever.html">Golden Retriever</a>
+ <a class="dropdown-item" href="Beagle.html">Beagle</a>
+  <a class="dropdown-item" href="Bulldog.html">Bulldog</a>
+ <a class="dropdown-item" href="YorkshireTerrier.html">Yorkshire Terrier</a>
+ <a class="dropdown-item" href="Boxer.html">Boxer</a>
+ <a class="dropdown-item" href="Poodle.html">Poodle</a>
+ <a class="dropdown-item" href="Rottweiler.html">Rottweiler</a>
+  <a class="dropdown-item" href="Dachshunds.html">Dachshunds</a>
+ <a class="dropdown-item" href="Pomeranian.html">Pomeranian</a>
+<a class="dropdown-item" href="Chihuahua.html">Chihuahua</a>
+ <a class="dropdown-item" href="Pug.html">Pug</a>
+ <a class="dropdown-item" href="BerneseMountain.html"> Bernese Mountain</a>
+ <a class="dropdown-item" href="Samoyed.html">Samoyed</a>
+ </div>
+  </li>
+                        
+<li class="nav-item dropdown">
+ <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us </a>
+ <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+<a class="dropdown-item" href="aboutus.html">About Us </a>
+<a class="dropdown-item" href="contact.html" > Contact Us</a>
+<a class="dropdown-item" href="enquiry.html" > Enquiry form</a>
+<a class="dropdown-item" href="store.html" > Store</a>
+                               
+                                                        
+ </ul>
+  </div>
+  </nav>
+  <!-- navbar ends -->
+    
+    
+	
+  <section class="mb-5">
+    <div id="carousel-1" class="carousel slide" data-ride="carousel">
+       
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-1" data-slide-to="1"></li>
+            <li data-target="#carousel-1" data-slide-to="2"></li>
+            <li data-target="#carousel-1" data-slide-to="3"></li>
+        </ol>
+       
+        <div class="carousel-inner" role="listbox">
+
+          <div class="carousel-item active">
+            <img class="d-block img-fluid" src="images/crsl2.jpg" alt="slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>PuppyCo</h3>
+              <p>Find the right puppy for your family.</p>
+            </div>
+          </div>
+          
+          <div class="carousel-item">
+            <img class="d-block img-fluid" src="images/crsl1.jpg" alt="Slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>PuppyCo</h3>
+              <p>Find the right puppy for your family.</p>
+            </div>
+          </div>
+          
+          <div class="carousel-item">
+            <img class="d-block img-fluid" src="images/crsl3.jpg" alt="Slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>PuppyCo</h3>
+              <p>Find the right puppy for your family.</p>
+            </div>
+          </div>
+          
+          <div class="carousel-item">
+            <img class="d-block img-fluid" src="images/crsl4.jpg" alt="Slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>PuppyCo</h3>
+              <p>Find the right puppy for your family.</p>
+            </div>
+          </div>
+
+        </div><!-- e carousel-inner -->
+        
+        <a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">prev</span>
+        </a>
+        
+        <a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">next</span>
+        </a>
+        
+    </div><!-- e carousel -->
+  </section>
+  <br><br>
+    
+ <!-- <Section-2-Starts> --> 
+        
+    <div class="container-fluid" style="background-color: #FEF0C1;  text-align: center;">
+        <br><br>
+        <h4 style="text-align: center; color: #ACA13F; margin-bottom: 3vw;">OUR HOT PICKS</h4>
+        <div class="row" style="width: 100%;">
+            <div class="col-md-3">
+               <a href="GoldenRetriever.html"> <img src="gallery/golden3.jpg" class="shadow p-1 rounded dogs1" style="background-color: #d6292b;" alt="Not Found" height="160px" width="200px"></a>
+                <h5 style="margin-left: 22px; color: darkslategrey;">Golden Retriever</h5>
+                <ul>
+                    <li><a href="GoldenRetriever.html" style="text-decoration: none; color: #ACA13F;" >Even-tempered</a> </li>
+                    <li><a href="GoldenRetriever.html" style="text-decoration: none; color: #ACA13F;"> Intelligent </a></li>
+                    <li><a href="GoldenRetriever.html" style="text-decoration: none; color: #ACA13F;">Affectionate</a></li>
+                    
+                </ul>
+            </div>
+            <div class="col-md-3">
+              <a href="Rottweiler.html" ><img src="gallery/rot2.jpg"class="shadow p-1 rounded dogs1" style="background-color: #d6292b;" alt="Not Found" height="160px" width="200px"></a>
+                <h5 style="margin-left: 22px; color: darkslategrey;">Rottweiler</h5>
+                <ul>
+                    <li><a href="Rottweiler.html" style="text-decoration: none; color: #ACA13F;">Calm</a> </li>
+                    <li><a href="Rottweiler.html" style="text-decoration: none; color: #ACA13F;">Confident</a></li>
+                    <li><a href="Rottweiler.html" style="text-decoration: none; color: #ACA13F;">Courageous</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+              <a href="YorkshireTerrier.html">  <img src="gallery/york1.jpg" class="shadow p-1 rounded dogs1 " style="background-color: #d6292b;" alt="Not Found" height="160px" width="200px"></a>
+                <h5 style="margin-left: 22px; color: darkslategrey;">Yorkshire Terrier</h5>
+                <ul>
+                    <li><a href="YorkshireTerrier.html" style="text-decoration: none; color: #ACA13F;">Energetic</a> </li>
+                    <li><a href="YorkshireTerrier.html" style="text-decoration: none; color: #ACA13F;">Feisty</a></li>
+                    <li><a href="YorkshireTerrier.html" style="text-decoration: none; color: #ACA13F;">Domineering</a></li>
+                   
+                </ul>
+            </div>
+            <div class="col-md-3">
+              <a href="Boxer.html"> <img src="gallery/boxer2.jpg" class="shadow p-1 rounded dogs1" style="background-color: #d6292b;" alt="Not Found" height="160px" width="200px"></a>
+                <h5 style="margin-left: 22px; color: darkslategrey;">Boxer</h5>
+                <ul>
+                    <li><a href="Boxer.html" style="text-decoration: none; color: #ACA13F;">Intelligent</a> </li>
+                    <li><a href="Boxer.html" style="text-decoration: none; color: #ACA13F;"> High-energy</a></li>
+                    <li><a href="Boxer.html" style="text-decoration: none; color: #ACA13F;"> Playful dogs</a></li>
+                    
+                </ul>
+            </div> 
+            <div class="col-md-3 mt-4">
+              <a href="Poodle.html">   <img src="gallery/poodle.jpg " class="shadow p-1 rounded dogs1" style="background-color: #d6292b;" alt="Not Found" height="160px" width="200px"></a>
+                <h5 style="margin-left: 22px; color: darkslategrey; margin-top: 25px;">Poodle</h5>
+                <ul>
+                    
+                    <li><a href="Poodle.html" style="text-decoration: none; color: #ACA13F;">Loyal</a></li>
+                    <li><a href="Poodle.html" style="text-decoration: none; color: #ACA13F;">Trainable</a></li>
+                    <li><a href="Poodle.html" style="text-decoration: none; color: #ACA13F;">Instinctual</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 mt-4">
+              <a href="Bulldog.html"> <img src="gallery/bulldog3.jpg" class="shadow p-1 rounded dogs1" style="background-color: #d6292b;" alt="Not Found" height="160px" width="200px"></a>
+                <h5 style="margin-left: 22px; color: darkslategrey; margin-top: 25px;">Bull dog</h5>
+                <ul>
+                    <li><a href="Bulldog.html" style="text-decoration: none; color: #ACA13F;">Calm</a> </li>
+                    <li><a href="Bulldog.html" style="text-decoration: none; color: #ACA13F;">Resolute</a></li>
+                    <li><a href="Bulldog.html" style="text-decoration: none; color: #ACA13F;">Courageous</a></li>
+                    
+                </ul>
+            </div>
+            <div class="col-md-3 mt-4">
+              <a href="Beagle.html"> <img src="gallery/beagle2.jpg" class="shadow p-1 rounded dogs1" style="background-color: #d6292b;" alt="Not Found" height="160px" width="200px"></a>
+                <h5 style="margin-left: 22px; color: darkslategrey; margin-top: 25px;">Beagle</h5>
+                <ul>
+                    <li><a href="Beagle.html" style="text-decoration: none; color: #ACA13F;">Even-tempered</a> </li>
+                    <li><a href="Beagle.html" style="text-decoration: none; color: #ACA13F;">Notoriously friendly</a></li>
+                    <li><a href="Beagle.html" style="text-decoration: none; color: #ACA13F;"> Gentle</a></li>
+                    
+                </ul>
+            </div>
+            <div class="col-md-3 mt-4">
+              <a href="Samoyed.html">     <img src="gallery/samoyed1.jpg" class="shadow p-1 rounded dogs1" style="background-color: #d6292b;" alt="Not Found" height="160px" width="200px"></a>
+                <h5 style="margin-left: 22px; color: darkslategrey; margin-top: 25px;">Samoyed</h5>
+                <ul>
+                    <li><a href="Samoyed.html" style="text-decoration: none; color: #ACA13F;"> Intelligent</a> </li>
+                    <li><a href="Samoyed.html" style="text-decoration: none; color: #ACA13F;">Gentle</a></li>
+                    <li><a href="Samoyed.html" style="text-decoration: none; color: #ACA13F;">Loyal</a></li>
+                   
+                </ul>
+                <br><br>
+            </div>
+        </div>
+    </div>
+<!-- <Section-2-Ends> -->
+  <br><br><br>
+  <div style="background-color: #36538b; width: 100%; height: 10px;"></div>
+  <br><br><br>
+  <section class="pt-5 mb-5" style="background-color:#FEF0C1 ;">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mb-5">
+            
+                <div id="carousel-10" class="carousel slide" data-ride="carousel">
+                   
+                    <ol class="carousel-indicators">
+                      <li data-target="#carousel-10" data-slide-to="0" class="active"></li>
+                      <li data-target="#carousel-10" data-slide-to="1"></li>
+                      <li data-target="#carousel-10" data-slide-to="2"></li>
+                    </ol>
+                   
+                    <div class="carousel-inner" role="listbox">
+            
+                      <div class="carousel-item active">
+                        <img class="d-block img-fluid" src="crsl/3.jpg" alt="slide">
+                      </div>
+                      
+                      <div class="carousel-item">
+                        <img class="d-block img-fluid" src="crsl/10.jpg" alt="slide">
+                      </div>
+                      
+                      <div class="carousel-item">
+                        <img class="d-block img-fluid" src="crsl/4.jpg" alt="slide">
+                      </div>
+
+                    </div><!-- e carousel-inner -->
+                    
+                    <a class="carousel-control-prev" href="#carousel-10" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">prev</span>
+                    </a>
+                    
+                    <a class="carousel-control-next" href="#carousel-10" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">next</span>
+                    </a>
+                    
+                </div><!-- e carousel -->
+            
+            </div><!-- e col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 -->
+            
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mb-5">
+            
+                <div id="carousel-11" class="carousel slide" data-ride="carousel">
+                   
+                    <ol class="carousel-indicators">
+                      <li data-target="#carousel-11" data-slide-to="0" class="active"></li>
+                      <li data-target="#carousel-11" data-slide-to="1"></li>
+                      <li data-target="#carousel-11" data-slide-to="2"></li>
+                    </ol>
+                   
+                    <div class="carousel-inner" role="listbox">
+            
+                      <div class="carousel-item active">
+                        <img class="d-block img-fluid" src="crsl/12.jpg" alt="slide">
+                      </div>
+                      
+                      <div class="carousel-item">
+                        <img class="d-block img-fluid" src="crsl/13.jpg" alt="slide">
+                      </div>
+                      
+                      <div class="carousel-item">
+                        <img class="d-block img-fluid" src="crsl/14.jpg" alt="slide">
+                      </div>
+
+                    </div><!-- e carousel-inner -->
+                    
+                    <a class="carousel-control-prev" href="#carousel-11" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">prev</span>
+                    </a>
+                    
+                    <a class="carousel-control-next" href="#carousel-11" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">next</span>
+                    </a>
+                    
+                </div><!-- e carousel -->
+            
+            </div><!-- e col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 -->
+            
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl3 mb-5">
+            
+                <div id="carousel-12" class="carousel slide" data-ride="carousel">
+                   
+                    <ol class="carousel-indicators">
+                      <li data-target="#carousel-12" data-slide-to="0" class="active"></li>
+                      <li data-target="#carousel-12" data-slide-to="1"></li>
+                      <li data-target="#carousel-12" data-slide-to="2"></li>
+                    </ol>
+                   
+                    <div class="carousel-inner" role="listbox">
+            
+                      <div class="carousel-item active">
+                        <img class="d-block img-fluid" src="crsl/5.jpg" alt="slide">
+                      </div>
+                      
+                      <div class="carousel-item">
+                        <img class="d-block img-fluid" src="crsl/16.jpg" alt="slide">
+                      </div>
+                      
+                      <div class="carousel-item">
+                        <img class="d-block img-fluid" src="crsl/17.jpg" alt="slide">
+                      </div>
+
+                    </div><!-- e carousel-inner -->
+                    
+                    <a class="carousel-control-prev" href="#carousel-12" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">prev</span>
+                    </a>
+                    
+                    <a class="carousel-control-next" href="#carousel-12" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">next</span>
+                    </a>
+                    
+                </div><!-- e carousel -->
+            
+            </div><!-- e col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3-->
+            
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mb-5">
+            
+                <div id="carousel-13" class="carousel slide" data-ride="carousel">
+                   
+                    <ol class="carousel-indicators">
+                      <li data-target="#carousel-13" data-slide-to="0" class="active"></li>
+                      <li data-target="#carousel-13" data-slide-to="1"></li>
+                      <li data-target="#carousel-13" data-slide-to="2"></li>
+                    </ol>
+                   
+                    <div class="carousel-inner" role="listbox">
+            
+                      <div class="carousel-item active">
+                        <img class="d-block img-fluid" src="crsl/18.jpg" alt="slide">
+                      </div>
+                      
+                      <div class="carousel-item">
+                        <img class="d-block img-fluid" src="crsl/19.jpg" alt="slide">
+                      </div>
+                      
+                      <div class="carousel-item">
+                        <img class="d-block img-fluid" src="crsl/2.jpg" alt="slide">
+                      </div>
+
+                    </div><!-- e carousel-inner -->
+                    
+                    <a class="carousel-control-prev" href="#carousel-13" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">prev</span>
+                    </a>
+                    
+                    <a class="carousel-control-next" href="#carousel-13" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">next</span>
+                    </a>
+                    
+                </div><!-- e carousel -->
+            
+            </div><!-- e col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 -->
+            
+        </div><!-- e row -->
+    </div><!-- e container -->
+</section> 
+<!-- <Section-3-Starts> -->
+<h4 style="text-align: center; color: #ACA13F; margin-top: 3vw; font-size: 50px;">*POPULAR*</h4>
+<br><br>
+<ul id="categories" class="clr">
+<li class="pusher"></li>
+<li>
+  <div>
+    <img src="gallery/lab3.jpg" alt=""/>
+    <h1>Mabel</h1>
+    <p>Hey new owner,I eagerly wait to play with you :)</p>
+</div>
+</li>
+<li>
+  <div>
+    <img src="gallery/beagle1.jpg" alt=""/>
+    <h1>Milo</h1>
+    <p>I'm small and sweet :)</p>
+</div>
+</li>
+<li>
+  <div>
+    <img src="gallery/pom3.jpg" alt=""/>
+    <h1>Jojo</h1>
+    <p>I'm fluffiest among all :)</p>
+</div>
+</li>
+<li>
+  <div>
+    <img src="gallery/german3.jpg" alt=""/>
+    <h1>Maximus</h1>
+    <p>I would protect you all the time :)</p>
+</div>
+</li>
+<li class="pusher"></li>
+<li>
+  <div>
+    <img src="gallery/dach2.jpg" alt=""/>
+    <h1>Miles</h1>
+    <p>I would love to lay down on your laps :)</p>
+</div>
+</li>
+
+<li>
+  <div>
+    <img src="gallery/golden2.jpg" alt=""/>
+    <h1>Arlo</h1>
+    <p>I'm a pefect cuddle partner one could ask for :)</p>
+</div>
+</li>
+<li class="pusher"></li>
+<li>
+  <div>
+    <img src="gallery/bernese2.jpg" alt=""/>
+    <h1>Coco</h1>
+    <p>I'd like to have some tasty treats :)</p>
+</div>
+</li>
+</ul>
+<br><br>
+<div style="width: 100% ; height: 20px; background-color: #36538b;"></div>
+<br><br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h2>Development.</h2>
+      <p style="padding: auto;">Born after an average of 63 days of gestation, puppies emerge in an amnion that is bitten off and eaten by the mother dog. Puppies begin to nurse almost immediately. If the litter exceeds six puppies, particularly if one or more are obvious runts, human intervention in hand-feeding the stronger puppies is necessary to ensure that the runts get proper nourishment and attention from the mother. As they reach one month of age, puppies are gradually weaned and begin to eat solid food. The mother may regurgitate partially digested food for the puppies or might let them eat some of her solid food. The mother usually refuses to nurse at this stage, though she might let them occasionally nurse for comfort.</p>
+    </div>
+    <div class="col-md-6">
+      <img src="pupimg/pup1.jpg" alt="">
+    </div>
+    </div>
+    </div>
+  <br><br><br>
+<div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img  src="pupimg/pup2.jpg" alt="">
+      </div>
+      <div class="col-md-6">
+        <p style=" padding-left: 50px; ">At first, puppies spend the large majority of their time sleeping and the rest feeding. They instinctively pile together into a heap, and become distressed if separated from physical contact with their littermates by even a short distance.
+
+          Puppies are born with a fully functional sense of smell. They are unable to open their eyes. During their first two weeks, a puppy's senses all develop rapidly. During this stage the nose is the primary sense organ used by puppies to find their mother's teats, and to locate their littermates, if they become separated by a short distance. Puppies open their eyes about nine to eleven days following birth. At first, their retinas are poorly developed and their vision is poor. Puppies are not able to see as well as adult dogs. In addition, puppies' ears remain sealed until about thirteen to seventeen days after birth, after which they respond more actively to sounds. Between two and four weeks old, puppies usually begin to growl, bite, wag their tails, and bark.</p>
+      </div>
+    </div>
+  </div>
+ 
+  <br><br><br>
+<div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Socialization</h2>
+        <p>
+          Puppies are highly social animals and spend most of their waking hours interacting with either their mother or littermates. When puppies are socialized with humans, particularly between the ages of eight and twelve weeks, they develop social skills around people. Those that do not receive adequate socialization during this period may display fearful behavior around humans or other dogs as adults. The optimum period for socialisation is between eight and twelve weeks; professional animal trainers and the American Kennel Club advise puppies should be introduced to "100 People by 12 Weeks" and have encountered a wide and varied selection of people and environments.
+        </p>
+  </div>
+      <div class="col-md-6">
+        <img src="pupimg/pup4.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <br><br>
+<div style="width: 100% ; height: 10px; background-color: #36538b;"></div>
+<br><br><br>
+   
+<section class=" pt-5 mb-5" style="background-color: #FEF0C1;">
+  <div class="container">
+      <div class="row">
+          
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-5">
+          
+              <div id="carousel-7" class="carousel slide" data-ride="carousel">
+                 
+                  <ol class="carousel-indicators">
+                    <li data-target="#carousel-7" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-7" data-slide-to="1"></li>
+                    <li data-target="#carousel-7" data-slide-to="2"></li>
+                  </ol>
+                 
+                  <div class="carousel-inner" role="listbox">
+          
+                    <div class="carousel-item active">
+                      <img class="d-block img-fluid " id="crslid" src="crsl/25.jpg" alt="slide">
+                    </div>
+                    
+                    <div class="carousel-item">
+                      <img class="d-block img-fluid " id="crslid" src="crsl/26.jpg" alt="slide">
+                    </div>
+                    
+                    <div class="carousel-item">
+                      <img class="d-block img-fluid "  id="crslid" src="crsl/27.jpg" alt="slide">
+                    </div>
+
+                  </div><!-- e carousel-inner -->
+                  
+                  <a class="carousel-control-prev" href="#carousel-7" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">prev</span>
+                  </a>
+                  
+                  <a class="carousel-control-next" href="#carousel-7" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">next</span>
+                  </a>
+                  
+              </div><!-- e carousel -->
+          
+          </div><!-- e col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 -->
+          
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-5">
+          
+              <div id="carousel-8" class="carousel slide" data-ride="carousel">
+                 
+                  <ol class="carousel-indicators">
+                    <li data-target="#carousel-8" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-8" data-slide-to="1"></li>
+                    <li data-target="#carousel-8" data-slide-to="2"></li>
+                  </ol>
+                 
+                  <div class="carousel-inner" role="listbox">
+          
+                    <div class="carousel-item active">
+                      <img class="d-block img-fluid "  id="crslid" src="crsl/9.jpg" alt="slide">
+                    </div>
+                    
+                    <div class="carousel-item">
+                      <img class="d-block img-fluid " id="crslid" src="crsl/1.jpg" alt="slide">
+                    </div>
+                    
+                    <div class="carousel-item">
+                      <img class="d-block img-fluid " id="crslid" src="crsl/11.jpg" alt="slide">
+                    </div>
+
+                  </div><!-- e carousel-inner -->
+                  
+                  <a class="carousel-control-prev" href="#carousel-8" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">prev</span>
+                  </a>
+                  
+                  <a class="carousel-control-next" href="#carousel-8" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">next</span>
+                  </a>
+                  
+              </div><!-- e carousel -->
+          
+          </div><!-- e col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 -->
+          
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-5">
+          
+              <div id="carousel-9" class="carousel slide" data-ride="carousel">
+                 
+                  <ol class="carousel-indicators">
+                    <li data-target="#carousel-9" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-9" data-slide-to="1"></li>
+                    <li data-target="#carousel-9" data-slide-to="2"></li>
+                  </ol>
+                 
+                  <div class="carousel-inner" role="listbox">
+          
+                    <div class="carousel-item active">
+                      <img class="d-block img-fluid " id="crslid" src="crsl/22.jpg" alt="slide">
+                    </div>
+                    
+                    <div class="carousel-item">
+                      <img class="d-block img-fluid "  id="crslid"src="crsl/23.jpg" alt="slide">
+                    </div>
+                    
+                    <div class="carousel-item">
+                      <img class="d-block img-fluid " id="crslid" src="crsl/24.jpg" alt="slide">
+                    </div>
+
+                  </div><!-- e carousel-inner -->
+                  
+                  <a class="carousel-control-prev" href="#carousel-9" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">prev</span>
+                  </a>
+                  
+                  <a class="carousel-control-next" href="#carousel-9" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">next</span>
+                  </a>
+                  
+              </div><!-- e carousel -->
+          
+          </div><!-- e col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 -->
+          
+      </div><!-- e row -->
+  </div><!-- e container -->
+</section>
+<br><br><br>
+<div style="width: 100% ; height: 20px; background-color: #36538b;"></div>
+<br><br><br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+ 
+    <b>  <h1 >Health Guarantee</h1></b>
+ 
+    </div>
+    
+    <div class="col-md-6">
+     
+      <p>At PuppyCo, we pride ourselves on being far more than just a service. We're committed to placing healthy puppies into happy homes and have a number of measures in place to ensure the health and happiness of your new family member. One of them is our Health Guarantee, which is only activated once you take your puppy to a licensed veterinarian within three (3) business days of arrival of your puppy.</p>
+    <a href="healthguarantee.html"><b><p style="color:  #d6292b;">Learn More ></p></b></a>
+    </div>
+  </div>
+</div>
+<br><br><br>
+<div style="width: 100% ; height: 20px; background-color: #36538b;"></div>
+<br><br><br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+ 
+     <b> <h1 >Industry-Leading <br> Standards</h1></b>
+ 
+    </div>
+    
+    <div class="col-md-6">
+     
+      <p>PuppyCo spends millions of dollars on a rigorous, proprietary screening and compliance program which screens breeders for standards that go significantly above and beyond federal and state regulations.
+
+        Our enhanced screening process is the strictest in the country and includes more than 100 points of emphasis for every puppy and its parents - Less than 10 percent of the breed partners who enter the review process are accepted into our network.</p>
+    <a href="ISL.html"><b><p style="color:  #d6292b;">Learn More ></p></b></a>
+    </div>
+  </div>
+</div>
+<br><br><br>
+<div style="width: 100% ; height: 20px; background-color: #36538b;"></div>
+<br><br><br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+ 
+     <b> <h1 >Safest Travel</h1></b>
+ 
+    </div>
+    
+    <div class="col-md-6">
+     
+      <p>Our pack and travel partners always put the health and well being of your puppy first. We have several options for getting your puppy home safely and as quickly as possible, including air, ground and chaperone packages.</p>
+    <a href="safetravel.html"><b><p style="color:  #d6292b;">Learn More ></p></b></a>
+    </div>
+  </div>
+</div>
+<br><br><br>
+<div style="width: 100% ; height: 20px; background-color: #36538b;"></div>
+<br><br><br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4" style="height: auto; text-align: center; border: 2px solid #42573f; border-right: #42573f solid 1px;">
+            <img src="images/review1.jpg" alt="Not Found" class="mt-4" height="120px" width="120px" style="border-radius: 30%;"/>
+            <br><br>
+            <p style="font-size: 20px; font-family: sans-serif;">Kevin B.</p>
+            <p style="font-size: 15px; font-family: sans-serif; color: #42573f;">ok l truly recommend PuppyCo l think buying a puppy from them if you want to have a healthy thier the company to go with its is a little pricy but if your dog is getting the red carpet when it is being taken from it s owner sent to it new owner how many dogs get that kind of treatment.</p>
+            <i class="fa fa-star" style="color: goldenrod;"></i>
+            <i class="fa fa-star" style="color: goldenrod;"></i>
+            <i class="fa fa-star" style="color: goldenrod;"></i>
+            <i class="fa fa-star mb-4" style="color: goldenrod;"></i>
+        </div>
+        <div class="col-md-4" style="height: auto; text-align: center; border: 2px solid #42573f;">
+            <img src="images/review2.jpg" alt="Not Found" class="mt-4" height="120px" width="120px" style="border-radius: 30%;"/>
+            <br><br>
+            <p style="font-size: 20px; font-family: sans-serif;">Courtney V.</p>
+            <p style="font-size: 15px; font-family: sans-serif; color: #42573f;">We love our puppy! He is soooooo sweet!! He is also a beautiful dog. And very smart! The only reason I am not giving you a 5 star is because picking up the puppy at the St. Louis spirit airport was so crazy!!! I couldn’t find where to go and stopped at like 5 different place to find someone that knew. You need better instructions!!!!!!</p>
+            <i class="fa fa-star" style="color: goldenrod;"></i>
+            <i class="fa fa-star" style="color: goldenrod;"></i>
+            <i class="fa fa-star" style="color: goldenrod;"></i>
+            <i class="fa fa-star" style="color: goldenrod;"></i>
+            <i class="fa fa-star mb-4" style="color: goldenrod;"></i>
+        </div>
+        <div class="col-md-4" style="height: auto; text-align: center; border: 2px solid #42573f; border-left: #42573f solid 1px;">
+            <img src="images/review3.jpg" alt="Not Found" class="mt-4" height="120px" width="120px" style="border-radius: 30%;"/>
+            <br><br>
+            <p style="font-size: 20px; font-family: sans-serif;">Rob S.</p>
+            <p style="font-size: 15px; font-family: sans-serif;">Very pleased with the entire experience with PuppyCo. We have the perfect dog for us and they met every expectation we had based on our choosing to do business with them. Ultimately, we paid more then we were originally were planning to do, however, after walking through the experience with PuppyCo and ending up with exactly what we hope for, it was worth it! </p>
+            <i class="fa fa-star" style="color: goldenrod;"></i>
+            <i class="fa fa-star" style="color: goldenrod;"></i>
+            <i class="fa fa-star" style="color: goldenrod;"></i>
+            <i class="fa fa-star" style="color: goldenrod;"></i>
+            <i class="fa fa-star mb-4" style="color: goldenrod;"></i>
+        </div>
+    </div>
+</div>
+<br><br><br>
+    <!-- footer starts -->
+    <footer>
+      <br>
+  <div class="container">
+      <div class="row">
+      <div class="col-md-4">
+          <h3 style="color: white;">About Us</h3>
+      <br>
+  <p style="color: white;">At PuppyCo, we pride ourselves on being far more than just a service. We're committed to placing healthy puppies into happy homes and have a number of measures in place to ensure the health and happiness of your new family member. One of them is our Health Guarantee, which is only activated once you take your puppy to a licensed veterinarian within three (3) business days of arrival of your puppy.</p>       
+  <br>     
+<a href="https://www.facebook.com/login/"><i class="fa fa-facebook" id="icons"></i>  </a>                                                                                                                                            
+<a href="https://www.instagram.com/puppy._.co/"><i class="fa fa-instagram" id="icons"></i> </a>                                                                                                                                                             
+<a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i class="fa fa-twitter" id="icons"></i></a>
+<a href="https://www.whatsapp.com/"><i class="fa fa-whatsapp" id="icons"></i>  </a>                                                                                                                                                          
+
+                                                                                                                                               
+  </div>
+
+  <div style="color: white;" class="col-md-4">
+      <h3>Most prefered breeds</h3>
+      <br>
+     <li> <a>Retrievers(Labrador)</a></li>
+      <li><a>French Bulldogs</a></li>
+      <li><a>German Shepherd Dogs	</a></li>
+      <li><a>Retrievers (Golden)	</a></li>
+      <li><a>Beagle</a></li>
+
+<br>
+  </div>
+  <div style="color: white;" class="col-md-4">
+      <h3>Contact us</h3>
+      <br>
+  
+      <input type="email" placeholder="Enter email" class="form-control">
+      <br>
+      <textarea type="text" class="form-control" placeholder="Enter comment"></textarea>
+      <br>
+      <button style="background-color: #d6292b; text-transform: lowercase;border: none;color: #fef0c1;">Submit</button>
+  
+  </div>
+</div>
+</div>
+<br><br>
+</footer>
+<!-- footer ends -->
+</body>
+</html>
+
+   
